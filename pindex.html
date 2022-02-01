@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Generator</title>
+    <script src="https://kit.fontawesome.com/46249a0d76.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="pindex.css">
+    <script defer src="pindex.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h2>Carnage Password Generator</h2>
+        <div class="result-container">
+            <input type="text" id="password" class="psw-container">
+            <button class="btn" id="copy">
+                <i class="far fa-clipboard"></i>
+            </button> 
+        </div>
+        <div class="settings">
+            <div class="setting">
+                <label>Enter Password Length (Max:20)</label>
+                <input type="number" id="p-length" value="8" min="4" max="20">
+            </div>
+            <div class="setting">
+                <label>Include UpperCase Letters</label>
+                <input type="checkbox" id="p-uppercase" checked class="toggle">
+            </div>
+            <div class="setting">
+                <label>Include LowerCase Letters</label>
+                <input type="checkbox" id="p-lowercase" checked class="toggle">
+            </div>
+            <div class="setting">
+                <label>Include Numbers)</label>
+                <input type="checkbox" id="p-number" checked class="toggle">
+            </div>
+            <div class="setting">
+                <label>Include Symbols</label>
+                <input type="checkbox" id="p-symbol" checked class="toggle">
+            </div>
+            <button id="submit" class="btn" style="font-size: 19px; font-weight: bold; display: block;
+            width: 100%;">
+                Generate Password
+            </button>
+        </div>
+    </div>
+    
+   
+    
+</body>
+</html>
